@@ -45,6 +45,7 @@ module.exports = function (app) {
     if (solution.indexOf(".") > -1) {
       return res.json({ error: "Puzzle cannot be solved" });
     }
+    console.log({ puzzle, solution });
     return res.json({ solution });
   });
 };
